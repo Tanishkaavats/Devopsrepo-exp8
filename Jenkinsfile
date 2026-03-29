@@ -2,11 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Clone Code') {
-            steps {
-                git 'https://github.com/Tanishkaavats/Devopsrepo-exp8'
-            }
-        }
 
         stage('Build Image') {
             steps {
@@ -14,7 +9,7 @@ pipeline {
             }
         }
 
-        stage('Run Container') {
+        stage('Run Container') { 
             steps {
                 sh 'docker run -d -p 3000:3000 my-app'
             }
