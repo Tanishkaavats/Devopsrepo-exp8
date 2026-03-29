@@ -1,0 +1,1 @@
+print("Hello from Tanishka(14201032024) IT-2 Sem-4")
